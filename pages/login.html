@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+</head>
+<body style="background: url('https://noke.jutretail.com.tw/images/auth_bg.png'); background-repeat: no-repeat;">
+    <div class="container">
+        <%- include('./layout/header'); -%>
+        <section class="col-6 mx-auto bg-white px-5 py-4">
+            <h5 class="text-center text-primary fw-bold">登入</h2>
+            <form action="" class="">
+                <div class="mb-4">
+                    <input type="text" placeholder="手機號碼(必填)" class="w-100">
+                </div>
+                <div class="password_group">
+                    <input type="password" name="password" id="password" placeholder="密碼" class="w-100">
+                    <span class="material-symbols-outlined text-primary">
+                        visibility
+                    </span>
+                    <span class="material-symbols-outlined text-primary">
+                        visibility_off
+                    </span>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+    <script type="module" src="../main.js"></script>
+</body>
+</html>
