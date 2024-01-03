@@ -1,3 +1,22 @@
 .index-title {
   font-size: 100px;
 }
+
+.img_spring_couplets {
+  width: 124px;
+}
+
+.btn_textHover:hover {
+  color: #fff;
+}
+
+.bg_test {
+  height: 100px;
+}
+
+.title {
+  font-size: 64px;
+  @media (max-width: 767px) {
+    font-size: 48px;
+  }
+}
