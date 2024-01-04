@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入</title>
 </head>
-<body style="background: url('https://noke.jutretail.com.tw/images/auth_bg.png'); background-repeat: no-repeat;">
-    <div class="container">
+<body class="d-flex flex-column vh-100" style="background: url('https://noke.jutretail.com.tw/images/auth_bg.png'); background-repeat: no-repeat;">
+    <div class="container mt-4">
         <%- include('./layout/header'); -%>
-        <section class="col-6 mx-auto bg-white px-5 py-4">
-            <h5 class="text-center text-primary fw-bold">登入</h2>
-            <form action="" class="">
+    </div>
+    <div class="container d-flex flex-column justify-content-center flex-grow-1">
+        <section class="login_group col-10 col-md-7 col-lg-5 mx-auto bg-white py-5 px-4  box-shadow">
+            <h5 class="text-center text-primary fw-bold mb-4">登入</h2>
+            <form>
                 <div class="mb-4">
-                    <input type="text" placeholder="手機號碼(必填)" class="w-100">
+                    <input type="text" placeholder="手機號碼(必填)" class="p-2 w-100 border_radius border border-primary">
                 </div>
-                <div class="password_group">
-                    <input type="password" name="password" id="password" placeholder="密碼" class="w-100">
-                    <span class="material-symbols-outlined text-primary">
+                <div class="password_group mb-5">
+                    <input type="password" name="password" id="password" placeholder="密碼" class="p-2 w-100 mb-3 border_radius border border-primary">
+                    <span class="material-symbols-outlined text-primary d-inline-block">
                         visibility
                     </span>
-                    <span class="material-symbols-outlined text-primary">
+                    <span class="material-symbols-outlined text-primary d-inline-block">
                         visibility_off
                     </span>
+                    <a class="d-block text-center" href="https://noke.jutretail.com.tw/reset/password">忘記密碼</a>
                 </div>
+                <button type="button" id="login_btn" class="btn btn-outline-primary w-100 btn_textHover">登入</button>
             </form>
         </section>
-
+        
     </div>
+    
+    <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script type="module" src="../login.js"></script>
 </body>
 </html>

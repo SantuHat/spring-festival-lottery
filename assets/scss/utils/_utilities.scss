@@ -4,3 +4,15 @@
 .box-shadow-gray-300 {
     box-shadow: 4px 4px 5px 0px $gray-300;
 }
+.btn_textHover:hover {
+    color: #fff;
+}
+.box-shadow {
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.1);
+}
+.border_radius {
+    border-radius: 0.375rem;
+}
+.border_color {
+    border-color: $primary;
+}
