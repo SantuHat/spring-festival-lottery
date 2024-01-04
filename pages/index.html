@@ -14,10 +14,12 @@
             <h5 class="text-center text-primary fw-bold mb-4">登入</h2>
             <form>
                 <div class="mb-4">
-                    <input type="text" placeholder="手機號碼(必填)" class="p-2 w-100 border_radius border border-primary">
+                    <input type="text" id="phone" placeholder="手機號碼(必填)" class="phone p-2 w-100 border_radius border border-primary">
+                    <div class="alert_phone"></div>
                 </div>
                 <div class="password_group mb-5">
-                    <input type="password" name="password" id="password" placeholder="密碼" class="p-2 w-100 mb-3 border_radius border border-primary">
+                    <input type="password" name="password" id="password" placeholder="密碼" class="password p-2 w-100 mb-3 border_radius border border-primary">
+                    <div class="alert_pwd"></div>
                     <div class="visibility_on">
                         <span class="material-symbols-outlined text-primary d-inline-block">
                             visibility
