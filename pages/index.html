@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>spring-festival-lottery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
 </head>
-
-<body style="background: url('https://noke.jutretail.com.tw/images/auth_bg.png'); background-repeat: no-repeat;">
-  
-  <div class="container mt-4">
-    <div class="header_section d-flex justify-content-between">
-      <%- include('./layout/header'); -%>
-      <img class="img_spring_couplets" src="../assets/images/spring-couplets.png" alt="spring-couplets">
+<body class="d-flex flex-column vh-100" style="background: url('https://noke.jutretail.com.tw/images/auth_bg.png'); background-repeat: no-repeat;">
+    <div class="container mt-4">
+        <%- include('./layout/header'); -%>
     </div>
-    <h1 class="text-primary fw-bold text-center mt-4 font-NotoSans title">會員抽獎活動</h1>
-    <section class=" col-md-8 mx-auto bg-white px-4 py-5 mt-4 box-shadow-gray-300 mb-4">
-      <div class="lottery_activity d-flex flex-column">
-        <a href="activity-a.html">
-          <button class="fs-2 w-100 mb-4 btn btn-outline-primary btn_textHover" type="button">抽獎活動名稱A</button>
-        </a>
-        <a href="activity-a.html">
-          <button class="fs-2 w-100 mb-4 btn btn-outline-primary btn_textHover" type="button">抽獎活動名稱B</button>
-        </a>
-        <a href="activity-a.html">
-          <button class="fs-2 w-100 mb-4 btn btn-outline-primary btn_textHover" type="button">抽獎活動名稱C</button>
-        </a>
-        <a href="activity-a.html">
-          <button class="fs-2 w-100 mb-4 btn btn-outline-primary btn_textHover" type="button">兌換抽獎券活動A</button>
-        </a>
-        <a href="activity-a.html">
-          <button class="fs-2 w-100 mb-4 btn btn-outline-primary btn_textHover" type="button">兌換抽獎券活動B</button>
-        </a>
-        <a href="activity-a.html">
-          <button class="fs-2 w-100 btn btn-outline-primary btn_textHover" type="button">兌換抽獎券活動C</button>
-        </a>
-      </div>
-    </section>
-  
-      <script type="module" src="../main.js"></script>
-</body>
+    <div class="container d-flex flex-column justify-content-center flex-grow-1">
+        <section class="login_group col-10 col-md-7 col-lg-5 mx-auto bg-white py-5 px-4  box-shadow">
+            <h5 class="text-center text-primary fw-bold mb-4">登入</h2>
+            <form>
+                <div class="mb-4">
+                    <input type="text" placeholder="手機號碼(必填)" class="p-2 w-100 border_radius border border-primary">
+                </div>
+                <div class="password_group mb-5">
+                    <input type="password" name="password" id="password" placeholder="密碼" class="p-2 w-100 mb-3 border_radius border border-primary">
+                    <span class="material-symbols-outlined text-primary d-inline-block">
+                        visibility
+                    </span>
+                    <span class="material-symbols-outlined text-primary d-inline-block">
+                        visibility_off
+                    </span>
+                    <a class="d-block text-center" href="https://noke.jutretail.com.tw/reset/password">忘記密碼</a>
+                </div>
+                <button type="button" id="login_btn" class="btn btn-outline-primary w-100 btn_textHover">登入</button>
+            </form>
+        </section>
+        
+    </div>
+    
+    <%- include('./layout/footer'); -%>
 
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../login.js"></script>
+</body>
 </html>
