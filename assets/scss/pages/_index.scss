@@ -8,10 +8,18 @@
 
 .activity_img {
   width: 640px;
-  @media (min-width: 640px) {
+  @media (min-width: 475px) {
     width: 100%;
+    max-width: 475px;
     max-height: 426px;
     object-fit: contain;
+  }
+  @media (min-width: 640px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 540px;
+    max-height: 262px;
   }
 }
 

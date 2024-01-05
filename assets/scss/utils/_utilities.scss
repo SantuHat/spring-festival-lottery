@@ -1,6 +1,15 @@
 .font-NotoSans {
     font-family: 'Noto Sans TC', sans-serif;
 }
+.font-NotoSerif {
+    font-family: 'Noto Serif TC';
+}
+.font-Caveat {
+    font-family: 'Caveat';
+}
+.font-OpenSans {
+    font-family: 'Open Sans';
+}
 .box-shadow-gray-300 {
     box-shadow: 4px 4px 5px 0px $gray-300;
 }
@@ -15,4 +24,7 @@
 }
 .border_color {
     border-color: $primary;
+}
+.ps-12px {
+    padding-left: 12px;
 }

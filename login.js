@@ -34,6 +34,7 @@ const alertPwd = document.querySelector('.alert_pwd');
 password.addEventListener('change', () => {
     if(password.value === '' || checkPassword(password.value) == false){
         alertPwd.textContent = `密碼格式不正確(至少 6~12 位英數字)`;
+        return;
     }else{
         alertPwd.textContent = '';
     }
