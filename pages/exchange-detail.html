@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activityA</title>
+</head>
+<body style="background: url('https://noke.jutretail.com.tw/images/auth_bg.png'); background-repeat: no-repeat;">
+    <div class="container mt-4">
+        <%- include('./layout/header'); -%>
+        <h1 class="fs-2 fw-bold text-primary text-center my-5 font-NotoSerif">龍年說好話 鬧春遊市集</h1>
+    </div>
+    <section class="col-lg-5 mx-auto text-center mt-4">
+        <img class="activity_img" src="../assets/images/image 3.png" alt="">
+        <img class="activity_img" src="../assets/images/image 4.png" alt="">
+    </section>
+    <div class="container">
+        <div class="col-md-5 mx-auto mb-5">
+            <h3 class="text-center my-4 font-NotoSerif text-primary fw-bold">1/08 - 1/14</h3>
+            <h5 class="font-NotoSerif ps-12px">活動內容</h5>
+            <ul class="mt-3 font-NotoSerif">
+                <li>臉書留言一句龍年吉祥話</li>
+                <li>@一位好友一起逛市集吃美食</li>
+                <li>1.15抽出20位幸運得主</li>
+                <li>1.18起回館領取精美紅包袋一組</li>
+            </ul>
+        </div>
+        <h2 class="fs-5 text-center text-primary mt-4 fw-bold">您目前的會員點數</h2>
+        <section class="col-5 mx-auto winning_number jut_point text-center p-2">
+            <input type="button" value="100" class="memberPoint bg-secondary border-0">
+        </section>
+        <h2 class="fs-5 text-center text-primary mt-4 fw-bold">請選擇您要兌換的點數</h2>
+        <section class="col-5 mx-auto winning_number jut_point text-center p-2 mb-2">
+            <input type="number" id="exchangeJutPoint" class="jut_point_outline text-center bg-secondary border-0 border-bottom border-primary" min="0">
+        </section>
+        <div class="col-5 mx-auto text-center">
+            <input type="button" value="兌換" class="exchange_btn bg-secondary fw-bold">
+        </div>
+        <h2 class="fs-5 text-center text-primary mt-5 fw-bold">您目前的抽獎券號碼</h2>
+        <section class="lotteryNum_group col-lg-5 mx-auto winning_number text-center p-2 mb-4">
+            <!-- JS渲染 -->
+        </section>
+        <p class="fs-7 col-lg-5 mx-auto font-NotoSerif">注意事項:</p>
+    </div>
+
+    
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../exchange.js"></script>
+</body>
+</html>
