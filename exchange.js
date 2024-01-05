@@ -22,7 +22,7 @@ exchangeBtn.addEventListener('click', () => {
             let currentMemberPoint = parseInt(memberPoint.value);
             let exchangedPoint = parseInt(exchangeJutPoint.value);
             // 檢查是否有足夠的點數進行兌換
-            if (currentMemberPoint >= exchangedPoint) {
+            if (currentMemberPoint >= exchangedPoint && exchangedPoint !== 0) {
                 // 更新會員點數並清空輸入框
                 memberPoint.value = currentMemberPoint - exchangedPoint;
                 exchangeJutPoint.value = '';
