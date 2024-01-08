@@ -1,1 +1,0 @@
-import"./main-0e5723f5.js";const p=document.querySelector(".lotteryNum_group");let s=["1020800036~1020800037","1020800042~1020800044"];function u(){let e="";s.forEach(r=>{let l=r.split("~"),n=parseInt(l[0]),o=parseInt(l[1]);for(let t=n;t<=o;t++)e+=`<span class="d-inline-block px-2 py-2">${t}</span>`}),p.innerHTML=e}u();
