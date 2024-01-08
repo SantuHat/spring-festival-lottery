@@ -5,6 +5,9 @@
 .jut_point{
     width: 200px;
     max-width: 100%;
+    @media (min-width: 992px) {
+        width: 288px;
+    }
 }
 .jut_point_outline:focus {
     outline: none;
