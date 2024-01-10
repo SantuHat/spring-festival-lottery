@@ -52,7 +52,7 @@ exchangeBtn.addEventListener('click', () => {
 
 
 // 拆分號碼
-let data = ['1020800036~1020800037', '1020800042~1020800044'];
+let data = ['1020800043~1020800044', '1020800760~1020800769'];
 function splitNum(){
     let str = '';
     data.forEach((v)=>{
