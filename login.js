@@ -1,12 +1,28 @@
 const loginBtn = document.querySelector('#login_btn');
-loginBtn.addEventListener('click', ()=>{
-    window.location.assign('https://santuhat.github.io/spring-festival-lottery/activity.html');
-})
-
 const password = document.querySelector('.password');
 const phone = document.querySelector('.phone');
 const visibilityOn = document.querySelector('.visibility_on');
 const visibilityOff = document.querySelector('.visibility_off');
+
+// 登入按鈕
+loginBtn.addEventListener('click', ()=>{
+    if(phone.value === '' && password.value === ''){
+        alert('請輸入資料');
+        return;
+    }else if(phone.value === ''){
+        alert('請填寫手機號碼');
+        return;
+    }else if(password.value === ''){
+        alert('請輸入密碼');
+        return;
+    }else if(checkPassword(password.value) == false || validatePhone(phone.value) == false){
+        return;
+    }
+    
+    // 轉址到活動頁
+    window.location.assign('https://santuhat.github.io/spring-festival-lottery/activity.html');
+
+})
 
 function eyesShow(e){
     console.log(e.target.nodeName);
